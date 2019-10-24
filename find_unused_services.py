@@ -12,6 +12,7 @@
 # (C) 2019 Joshua Sharp-Heward, Whangarei, New Zealand
 # released under GNU Lesser Public License v3.0 (GPLv3)
 # email jsh726@uowmail.edu.au
+# linkedin https://www.linkedin.com/in/joshua-sharp-heward-89b129131/
 # ---------------------------------------------------------------------------------
 from arcgis.gis import GIS
 from arcgis.mapping import WebMap
