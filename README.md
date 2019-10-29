@@ -1,2 +1,2 @@
 # gis-administration
-Administrative tools for ArcGIS Online and Portal
+### My low-budget homemade administrative tools for ArcGIS Online and Portal
