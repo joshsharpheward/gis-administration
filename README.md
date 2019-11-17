@@ -72,9 +72,9 @@ input: one or more url strings to search for - can be entire service url or slic
 
 example input:
 
-test
+1. test
 
-https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
+2. https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
 
 example output:
 
@@ -109,6 +109,8 @@ example output:
 service name  |  service type  |  service layers  |  service url  |  sharing  |  shared groups
 --- | --- | --- | --- | --- | ---
 test hfs not used in map | Feature Service | test layer, test layer 2 | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_not_used_in_map/FeatureServer | private | Not shared to groups
+test hfs used in map | Feature Service | test layer 3, test layer 4 | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer | shared | my_group 1, my_group 2
+
 
 
 ### User Report
