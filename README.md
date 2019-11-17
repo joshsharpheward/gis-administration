@@ -25,7 +25,7 @@ If you would like to run these scripts from an environment other than an ArcGIS 
 1. Replace the "gis = GIS('pro')" line with another authentication method from the list here https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
 The most common and safest method being using code like this:
 from getpass import getpass
-portal_url = 'your_url'
+portal_url = 'https://fakeurl.maps.arcgis.com/home/'
 username = 'your_username'
 password = getpass() # this prompts the user to input a password without echoing, better than hard-coding and storing in the python file
 gis = GIS(portal_url, username, password)
@@ -70,14 +70,43 @@ Completed script Find Unused Services...
 ### Search Webmaps for Service(s)
 input: one or more url strings to search for - can be entire service url or slice. note: search not case sensitive
 
-Example of appropriate searches:
+example input:
 
 test
 
 https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
 
+example output:
+
+Running script Search Web Maps For Services...
+
+Logged into https://fakeurl.maps.arcgis.com/ as test_user
+
+Searching webmaps in https://fakeurl.maps.arcgis.com/
+
+test webmap | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
+
+test webmap | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/1
+
+Search Complete
+Searching webapp configured searches in https://fakeurl.maps.arcgis.com/
+
+test webapp | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/1 | Searching on: name, sst, ssta, hs
+
+test webapp | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0 | Searching on: name, date, hs, ts_fig
+
+Completed script Search Web Maps For Services...
 
 ### Service Report
+input: output file path
+
+example input: 
+
+\myfolder\myfile.csv
+
+example output: 
+
+service name  |  service type  |  service layers  |  service url  |  sharing  |  shared groups
 
 ### User Report
 
