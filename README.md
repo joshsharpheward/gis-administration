@@ -42,8 +42,11 @@ All of these tools have been designed to run in ArcGIS Pro, and use the active p
 The main benefit of writing these tools to run in this way is that they can be run over different organisations very easily and without requiring any changes to the python file (whereas otherwise you would have to update url, username, pw each time you wanted to run it over a different organisation). 
 
 ### Find Unused Services
-  input: none
-  example output: 
+
+input: none
+
+example output: 
+
 Running script Find Unused Services...
 Logged into https://test.maps.arcgis.com/ as test_user
 Searching webmaps in https://test.maps.arcgis.com/
