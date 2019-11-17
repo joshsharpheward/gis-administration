@@ -107,6 +107,9 @@ example input:
 example output: 
 
 service name  |  service type  |  service layers  |  service url  |  sharing  |  shared groups
+--- | --- | --- | --- | --- | ---
+test hfs not used in map | Feature Service | test layer, test layer 2 | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_not_used_in_map/FeatureServer | private | Not shared to groups
+
 
 ### User Report
 
