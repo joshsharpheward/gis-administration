@@ -51,15 +51,15 @@ example output:
 
 Running script Find Unused Services...
 
-Logged into https://test.maps.arcgis.com/ as test_user
+Logged into https://fakeurl.maps.arcgis.com/ as test_user
 
-Searching webmaps in https://test.maps.arcgis.com/
+Searching webmaps in https://fakeurl.maps.arcgis.com/
 
-The following services are not used in any webmaps in https://test.maps.arcgis.com/
+The following services are not used in any webmaps in https://fakeurl.maps.arcgis.com/
 
-test hfs not used in map | https://test.maps.arcgis.com/home/item.html?id= ~~redacted~~
+test hfs not used in map | https://fakeurl.maps.arcgis.com/home/item.html?id= ~~redacted~~
 
-Form 1 | https://test.maps.arcgis.com/home/item.html?id= ~~redacted~~
+Form 1 | https://fakeurl.maps.arcgis.com/home/item.html?id= ~~redacted~~
 
 There are a total of 2 unused services in your portal
 
