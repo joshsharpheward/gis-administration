@@ -10,7 +10,7 @@ As not everyone has the time or inclination to learn Python, I also wanted these
 ### Overview of different tools
 1. Find Unused Services: Searches the active portal for services (map image, feature, vector tile, and image services included) which aren't being used in any webmaps within the active portal and returns the item title and url of the item to the geoprocessing results window.
 1. Metadata Report: Searches the active portal for items (excluding Code Attachments, Mobile Map Packages, Layer Templates and Mobile Applications as I didn't think these were necessary), fetches key information for the item (title, type of item, id, summary, description) and writes a csv with this information for each item. Optionally restricts the items searched to a single item owner - this is handy in situations where you just want to audit your authoritative content if it is all managed under a single admin account.
-1. Search webmaps for service(s): Takes a service url or part of a service url as an input, then searches the active portal for webmaps and configured searches in web applications which are using that service, then returns the webmap title(s) and layer rest url(s) (tells you whether whole service used, or just individual layers) and web application title(s), layer rest url(s) and which fields the search is configured on - all to the geoprocessing results window.
+1. Search Webmaps for Service(s): Takes a service url or part of a service url as an input, then searches the active portal for webmaps and configured searches in web applications which are using that service, then returns the webmap title(s) and layer rest url(s) (tells you whether whole service used, or just individual layers) and web application title(s), layer rest url(s) and which fields the search is configured on - all to the geoprocessing results window.
 1. Service Report: Searches the active portal for service items (map image, feature, vector tile, and image services included), fetches key information for the service (title, type, layers, url, access, groups shared with) then writes a csv with this information for each service item.
 1. User Report: Searches the active portal for users, fetches key information for the user (username, first name, last name, email, level, role, groups, last login) where it exists and writes a csv with this information for each user.
 
@@ -65,8 +65,21 @@ There are a total of 2 unused services in your portal
 
 Completed script Find Unused Services...
 
-### 
+### Metadata Report
 
+### Search Webmaps for Service(s)
+input: one or more url strings to search for - can be entire service url or slice. note: search not case sensitive
+
+Example of appropriate searches:
+
+test
+
+https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
+
+
+### Service Report
+
+### User Report
 
 ## License
 All scripts released under GNU Lesser Public License v3.0 (GPLv3)
