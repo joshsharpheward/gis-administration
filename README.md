@@ -33,7 +33,7 @@ password = getpass() # this prompts the user to input a password without echoing
 gis = GIS(portal_url, username, password)
 ```
 
-2. Replace all instances of "arcpy.AddMessage()" with "print()", replacing the function but keeping the text
+2. Replace all instances of "arcpy.AddMessage()" with "print()" and a new status message if the output was using arcpy.GetActivePortalUrl 
 
 3. Replace all instances of "arcpy.GetParameter(x)" and "arcpy.GetParameterAsText(x)" with an appropriate input. For example, for any of the report scripts that require an output filepath as input, simply replace "output_file_path = arcpy.GetParameterAsText(0)" with "output_file_path = r'myfolder\myfile.csv'"
 
