@@ -45,9 +45,11 @@ Inputs and outputs for each script detailed below
 
 ### Find Unused Services
 
-input: none
+##### Input: 
 
-example output: 
+none
+
+##### Example output: 
 
 Running script Find Unused Services...
 
@@ -68,15 +70,17 @@ Completed script Find Unused Services...
 ### Metadata Report
 
 ### Search Webmaps for Service(s)
-input: one or more url strings to search for - can be entire service url or slice. note: search not case sensitive
+##### Input: 
 
-example input:
+one or more url strings to search for - can be entire service url or slice. note: search not case sensitive
+
+##### Example input:
 
 1. test
 
 2. https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
 
-example output:
+##### Example output:
 
 Running script Search Web Maps For Services...
 
@@ -98,23 +102,28 @@ test webapp | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/tes
 Completed script Search Web Maps For Services...
 
 ### Service Report
-input: output file path
+##### Input: 
 
-example input: 
+output file path
+
+##### Example input: 
 
 \myfolder\myfile.csv
 
-example output: 
+##### example output: 
 
 service name  |  service type  |  service layers  |  service url  |  sharing  |  shared groups
 --- | --- | --- | --- | --- | ---
 test hfs not used in map | Feature Service | test layer, test layer 2 | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_not_used_in_map/FeatureServer | private | Not shared to groups
 test hfs used in map | Feature Service | test layer 3, test layer 4 | https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer | shared | my_group 1, my_group 2
 
-
-
 ### User Report
+##### Input:
+output file path
 
+##### Example input:
+
+\myfolder\myfile.csv
 ## License
 All scripts released under GNU Lesser Public License v3.0 (GPLv3)
 
