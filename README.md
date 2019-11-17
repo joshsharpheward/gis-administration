@@ -1,18 +1,19 @@
 # gis-administration
+### My homemade administrative tools for ArcGIS Online and Portal. 
 
 ## Description
-My homemade administrative tools for ArcGIS Online and Portal. 
 
-Early this year I realised it was kind of difficult to manage a Portal/AGOL organisation with the tools available via the GUI. What if I wanted to change the schema of a service, but have no idea which webmaps it was consumed in and therefore where it required updating? How do I easily answer questions like "which accounts in my organisation haven't been used in the last 6 months", or "where am I missing metadata on my services, webmaps and web applications". As such I went digging into the ArcGIS API for Python and have developed a number of scripts to answer these sorts of questions
+Early this year I realised it was kind of difficult to manage a Portal/AGOL organisation with the tools available via the GUI. What if I wanted to change the schema of a service, but have no idea which webmaps it was consumed in and therefore where it required updating? How do I easily answer questions like "which accounts in my organisation haven't been used in the last 6 months", or "where am I missing metadata on my services, webmaps and web applications". As such I went digging into the ArcGIS API for Python and have developed a number of scripts to answer these sorts of questions.
 
-As not everyone has the inclination or time to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience.
+As not everyone has the time or inclination to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience.
 
 ### Overview of different tools
-1. 
-2.
-3.
-4.
-5.
+1. Find Unused Services
+    ..*
+2. Metadata Report
+3. Search webmaps for service(s)
+4. Service Report
+5. User Report
 
 Disclaimer: I have no background in programming and am entirely self-taught (been playing around with python for ~ 1 year). As such there may be more efficient or more pythonic ways of writing these tools.
 
