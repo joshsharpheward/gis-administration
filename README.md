@@ -11,7 +11,7 @@ Python and all required packages come installed with ArcGIS Pro. As long as you 
 
 While I have included all of the individual Python (.py) files, instead of creating your own script tools and having to configure their parameters you can simply download the .tbx file which has these embedded and pre-configured. 
 
-If you would like to use these scripts from an environment other than an ArcGIS Pro script tool, you can make the following changes to do so:
+If you would like to run these scripts from an environment other than an ArcGIS Pro script tool, you can make the following changes to do so:
 1. Replace the "gis = GIS('pro')" line with another authentication method from the list here https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
 The most common and safest method being using code like this:
 from getpass import getpass
