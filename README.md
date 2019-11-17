@@ -9,11 +9,11 @@ As not everyone has the time or inclination to learn Python, I also wanted these
 
 ### Overview of different tools
 1. Find Unused Services
-    ..*
-2. Metadata Report
-3. Search webmaps for service(s)
-4. Service Report
-5. User Report
+*
+1. Metadata Report
+1. Search webmaps for service(s)
+1. Service Report
+1. User Report
 
 Disclaimer: I have no background in programming and am entirely self-taught (been playing around with python for ~ 1 year). As such there may be more efficient or more pythonic ways of writing these tools.
 
