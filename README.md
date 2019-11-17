@@ -8,14 +8,12 @@ Early this year I realised it was kind of difficult to manage a Portal/AGOL orga
 As not everyone has the time or inclination to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience.
 
 ### Overview of different tools
-1. Find Unused Services
-&nbsp;&nbsp;&nbsp;&nbsp; Searches the active portal for services (map image, feature, vector tile, and image services included) which aren't being used in any webmaps within the active portal and returns the item title and url of the item to the geoprocessing results window
-1. Metadata Report
+1. Find Unused Services: Searches the active portal for services (map image, feature, vector tile, and image services included) which aren't being used in any webmaps within the active portal and returns the item title and url of the item to the geoprocessing results window
+1. Metadata Report: Searches the active portal for items (excluding Code Attachments, Mobile Map Packages, Layer Templates and Mobile Applications as I didn't think these were necessary), fetches key information for the item (title, type of item, id, summary, description) and writes a csv with this information for each item
   * Searches the active portal for users, fetches key information 
 1. Search webmaps for service(s)
 1. Service Report
-1. User Report
-  * Searches the active portal for users, fetches key information for the user (username, first name, last name, email, level, role, groups, last login) and writes a csv with this information for each user
+1. User Report: Searches the active portal for users, fetches key information for the user (username, first name, last name, email, level, role, groups, last login) where it exists and writes a csv with this information for each user
 
 Disclaimer: I have no background in programming and am entirely self-taught (been playing around with python for ~ 1 year). As such there may be more efficient or more pythonic ways of writing these tools.
 
