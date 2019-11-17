@@ -41,7 +41,17 @@ All of these tools have been designed to run in ArcGIS Pro, and use the active p
 
 The main benefit of writing these tools to run in this way is that they can be run over different organisations very easily and without requiring any changes to the python file (whereas otherwise you would have to update url, username, pw each time you wanted to run it over a different organisation). 
 
-### 
+### Find Unused Services
+  input: none
+  example output: 
+Running script Find Unused Services...
+Logged into https://test.maps.arcgis.com/ as test_user
+Searching webmaps in https://test.maps.arcgis.com/
+The following services are not used in any webmaps in https://test.maps.arcgis.com/
+test hfs not used in map | https://test.maps.arcgis.com/home/item.html?id=~~redacted~~
+Form 1 | https://test.maps.arcgis.com/home/item.html?id=~~redacted~~
+There are a total of 2 unused services in your portal
+Completed script Find Unused Services...
 
 ## License
 All scripts released under GNU Lesser Public License v3.0 (GPLv3)
