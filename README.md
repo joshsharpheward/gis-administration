@@ -46,11 +46,9 @@ Inputs and outputs for each script detailed below
 ### Find Unused Services
 
 ##### Input: 
-
-none
+No input required
 
 ##### Example output: 
-
 Running script Find Unused Services...
 
 Logged into https://fakeurl.maps.arcgis.com/ as test_user
@@ -68,20 +66,30 @@ There are a total of 2 unused services in your portal
 Completed script Find Unused Services...
 
 ### Metadata Report
+##### Input:
+Output file path
+
+##### Example input:
+\myfolder\myfile.csv
+
+##### Example output:
+title  |  type  |  id  |  summary | description
+--- | --- | --- | --- | ---
+test hfs not used in map | Feature Service | ~~redacted~~ | bad summary | bad description
+test hfs used in map | Feature Service |  ~~redacted~~ | empty summary | empty description
 
 ### Search Webmaps for Service(s)
 ##### Input: 
-
-one or more url strings to search for - can be entire service url or slice. note: search not case sensitive
+One or more url strings to search for - can be entire service url or slice. note: search not case sensitive
 
 ##### Example input:
-
 1. test
 
 2. https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
 
-##### Example output:
+3. test, https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0, test2
 
+##### Example output:
 Running script Search Web Maps For Services...
 
 Logged into https://fakeurl.maps.arcgis.com/ as test_user
@@ -103,11 +111,9 @@ Completed script Search Web Maps For Services...
 
 ### Service Report
 ##### Input: 
-
-output file path
+Output file path
 
 ##### Example input: 
-
 \myfolder\myfile.csv
 
 ##### example output: 
@@ -119,11 +125,13 @@ test hfs used in map | Feature Service | test layer 3, test layer 4 | https://se
 
 ### User Report
 ##### Input:
-output file path
+Output file path
 
 ##### Example input:
-
 \myfolder\myfile.csv
+
+##### Example output:
+
 ## License
 All scripts released under GNU Lesser Public License v3.0 (GPLv3)
 
