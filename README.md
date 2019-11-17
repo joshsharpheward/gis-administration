@@ -9,11 +9,13 @@ As not everyone has the time or inclination to learn Python, I also wanted these
 
 ### Overview of different tools
 1. Find Unused Services
-*
+  * Searches the active portal for services (map image, feature, vector tile, and image services included) which aren't being used in any webmaps within the active portal and returns the item title and url of the item to the geoprocessing results window
 1. Metadata Report
+  * Searches the active portal for users, fetches key information 
 1. Search webmaps for service(s)
 1. Service Report
 1. User Report
+  * Searches the active portal for users, fetches key information for the user (username, first name, last name, email, level, role, groups, last login) and writes a csv with this information for each user
 
 Disclaimer: I have no background in programming and am entirely self-taught (been playing around with python for ~ 1 year). As such there may be more efficient or more pythonic ways of writing these tools.
 
