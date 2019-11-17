@@ -25,13 +25,13 @@ If you would like to run these scripts from an environment other than an ArcGIS 
 1. Replace the "gis = GIS('pro')" line with another authentication method from the list here https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
 The most common and safest method being using code like this:
 
-'''
+```
 from getpass import getpass
 portal_url = 'https://fakeurl.maps.arcgis.com/home/'
 username = 'your_username'
 password = getpass() # this prompts the user to input a password without echoing, better than hard-coding and storing in the python file
 gis = GIS(portal_url, username, password)
-'''
+```
 
 2. Replace all instances of "arcpy.AddMessage()" with "print()", replacing the function but keeping the text
 
