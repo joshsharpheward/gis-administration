@@ -3,7 +3,7 @@
 
 ## Description
 
-Early this year I realised it was kind of difficult to manage a Portal/AGOL organisation with the tools available via the GUI. What if I wanted to change the schema of a service, but have no idea which webmaps it was consumed in and therefore where it required updating? How do I easily answer questions like "which accounts in my organisation haven't been used in the last 6 months", or "where am I missing metadata on my services, webmaps and web applications". As such I went digging into the ArcGIS API for Python and have developed a number of scripts to answer these sorts of questions.
+Early this year I realised it was kind of difficult to manage a Portal/AGOL organisation with the tools available via the GUI. What if I wanted to change the schema of a service, but have no idea which webmaps it was consumed in and therefore what required updating? How do I easily answer questions like "which accounts in my organisation haven't been used in the last 6 months", or "where am I missing metadata on my services, webmaps and web applications". As such I went digging into the ArcGIS API for Python and have developed a number of scripts to answer these sorts of questions.
 
 As not everyone has the time or inclination to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience.
 
