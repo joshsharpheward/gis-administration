@@ -1,10 +1,20 @@
 # gis-administration
+
 ## Description
-My low-budget homemade administrative tools for ArcGIS Online and Portal. 
+My homemade administrative tools for ArcGIS Online and Portal. 
 
-Wanted to create administrative tools for typical workflows in Portal/AGOL that don't require Python experience to run.
+Early this year I realised it was kind of difficult to manage a Portal/AGOL organisation with the tools available via the GUI. What if I wanted to change the schema of a service, but have no idea which webmaps it was consumed in and therefore where it required updating? How do I easily answer questions like "which accounts in my organisation haven't been used in the last 6 months", or "where am I missing metadata on my services, webmaps and web applications". As such I went digging into the ArcGIS API for Python and have developed a number of scripts to answer these sorts of questions
 
-Disclaimer: I have no background in computer science and am entirely self-taught (been playing around with python for ~ 1 year). As such there may be more efficient or more pythonic ways of writing these tools, but they have been invaluable in helping manage my organisation's AGOL/Portal organisations over the last year.
+As not everyone has the inclination or time to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience.
+
+### Overview of different tools
+1. 
+2.
+3.
+4.
+5.
+
+Disclaimer: I have no background in programming and am entirely self-taught (been playing around with python for ~ 1 year). As such there may be more efficient or more pythonic ways of writing these tools.
 
 ## Installation
 Python and all required packages come installed with ArcGIS Pro. As long as you run these tools from within ArcGIS Pro as they are intended to be used, there should be no additional configuration required.
@@ -29,6 +39,11 @@ gis = GIS(portal_url, username, password)
 ## Usage
 All of these tools have been designed to run in ArcGIS Pro, and use the active portal in Pro to log in to the "GIS" object from the ArcGIS Api for Python, which supplies the required url and credentials. These will either fail or yield partial results depending on the user type of the account logged in - ideally they should be run from an account with a "User Type" of "Administrator" as this will have full access to the contents of the portal.
 
+The main benefit of writing these tools to run in this way is that they can be run over different organisations very easily and without requiring any changes to the python file (whereas otherwise you would have to update url, username, pw each time you wanted to run it over a different organisation). 
+
 ### 
 
 ## License
+All scripts released under GNU Lesser Public License v3.0 (GPLv3)
+
+Full details accessible here https://www.gnu.org/licenses/lgpl-3.0.en.html
