@@ -57,9 +57,9 @@ Searching webmaps in https://test.maps.arcgis.com/
 
 The following services are not used in any webmaps in https://test.maps.arcgis.com/
 
-test hfs not used in map | https://test.maps.arcgis.com/home/item.html?id=~~redacted~~
+test hfs not used in map | https://test.maps.arcgis.com/home/item.html?id= ~~redacted~~
 
-Form 1 | https://test.maps.arcgis.com/home/item.html?id=~~redacted~~
+Form 1 | https://test.maps.arcgis.com/home/item.html?id= ~~redacted~~
 
 There are a total of 2 unused services in your portal
 
