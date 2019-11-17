@@ -24,13 +24,15 @@ While I have included all of the individual Python (.py) files, instead of creat
 If you would like to run these scripts from an environment other than an ArcGIS Pro script tool, you can make the following changes to do so:
 1. Replace the "gis = GIS('pro')" line with another authentication method from the list here https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
 The most common and safest method being using code like this:
-"""
+
+'''
 from getpass import getpass
 portal_url = 'https://fakeurl.maps.arcgis.com/home/'
 username = 'your_username'
 password = getpass() # this prompts the user to input a password without echoing, better than hard-coding and storing in the python file
 gis = GIS(portal_url, username, password)
-"""
+'''
+
 2. Replace all instances of "arcpy.AddMessage()" with "print()", replacing the function but keeping the text
 
 3. Replace all instances of "arcpy.GetParameter(x)" and "arcpy.GetParameterAsText(x)" with an appropriate input. For example, for any of the report scripts that require an output filepath as input, simply replace "output_file_path = arcpy.GetParameterAsText(0)" with "output_file_path = r'myfolder\myfile.csv'"
@@ -132,6 +134,10 @@ Output file path
 \myfolder\myfile.csv
 
 ##### Example output:
+username  |  first name  |  last name  |  email  |  level  |  role  | groups  | last login
+--- | --- | --- | --- | --- | --- | --- | --- 
+josh | josh | test | notmyemail@gmail.com | 2 | org_admin | my_group | 29/11/2018
+josh2 | alsojosh | test2 | notmyemail2@gmail.com | 1 | org_user | (no groups) | (never logged in)
 
 ## License
 All scripts released under GNU Lesser Public License v3.0 (GPLv3)
