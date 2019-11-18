@@ -5,7 +5,7 @@
 
 Early this year I realised it was kind of difficult to manage a Portal/AGOL organisation with the tools available via the GUI. What if I wanted to change the schema of a service, but have no idea which webmaps it was consumed in and therefore what required updating? How do I easily answer questions like "which accounts in my organisation haven't been used in the last 6 months", or "where am I missing metadata on my services, webmaps and web applications". As such I went digging into the ArcGIS API for Python and have developed a number of scripts to answer these sorts of questions.
 
-As not everyone has the time or inclination to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience.
+As not everyone has the time or inclination to learn Python, I also wanted these tools to be able to simple enough to be able to be run by someone with little or no experience. To accomplish this I've designed these scripts to be run from script tools within ArcGIS Pro, which handles input parameters and authenticating/accessing the GIS object from the ArcGIS API for Python based on the active Portal (https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/#Connecting-through-ArcGIS-Pro).
 
 ### Overview of different tools
 1. Find Unused Services: Searches the active portal for services (map image, feature, vector tile, and image services included) which aren't being used in any webmaps within the active portal and returns the item title and url of the item to the geoprocessing results window.
