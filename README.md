@@ -86,11 +86,12 @@ test hfs used in map | Feature Service |  ~~redacted~~ | empty summary | empty d
 One or more url strings to search for - can be entire service url or slice. note: search not case sensitive
 
 ##### Example input:
+Slice of service url
 1. test
-
-2. https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0
-
-3. test, https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer/0, test2
+Whole service url
+2. https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer
+Multiple slices of url as well as whole url
+3. test, https://services9.arcgis.com/~~redacted~~/arcgis/rest/services/test_hfs_used_in_map/FeatureServer, test2
 
 ##### Example output:
 Running script Search Web Maps For Services...
